@@ -22,6 +22,8 @@ public class MemoryMemberRepository implements MemberRepository{
         return Optional.ofNullable(store.get(id));
     }
 
+    
+
     @Override
     public Optional<Member> findByName(String name) {
         return store.values().stream()
